@@ -16,7 +16,7 @@ author:
 ---
 
 ### Aplicación de Exámenes
-- Muestra una serie de preguntas
+- **Obligatorio**: Preguntas
   - Opción múltiple
   - Abiertas
     - Conteo de caracteres visible
@@ -27,28 +27,61 @@ author:
   - Subir Archivos
   - Escalas (0 - 10 | 1 - 5)
   - Escritura de LATEX
-- Formas de evaluación
+- **Obligatorio**: Formas de evaluación
   - Perfiles de evaluación para reutilizar criterios
     - 1 punto por pregunta (Default)
     - Máximo del grupo
     - Crédito extra
-- Revisión automática
+- **Obligatorio**: Revisión automática
   - Por defecto desabilitada para preguntas abierta
-- Revisión contra plagio
+- **Importante**: Revisión contra plagio
   - Opciones posibles para esto:
     - PlagPatrol
     - WCopyfind
-- Banco de preguntas para crear exámenes aleatorios
-- Detección contra trampa
+- **Importante**: Banco de preguntas para crear exámenes aleatorios
+- **Deseable**: Detección contra trampa
   - Requeriría de una aplicación adicional instalada y ejecutada durante el examen
   - Opciones
     - Detección de mouse / teclado
-    - Lista de procesos durante la aplicación
+    - Lista de procesos durante el examen
+- **Deseable**: Chat en tiempo real
+  - Permite a los alumnos escribir preguntas al profesor sin interrumpir a sus compañeros
 
-### Control de Grupos
+### Control de Grupos / Usuarios
+- **Obligatorio**: Un usuario puede tener roles como administrador, profesor o estudiante
+  - Administradores: Crean y administran grupos, cuentas de usuario y las configuraciones de los mismos.
+  - Profesores: Administran material de clases, asignan tareas y asignan calificaciones.
+  - Estudiantes: Tienen acceso a los grupos a los que pertenecen así como al material que les pertenece y a sus asignaciones.
+- **Obligatorio**: Autenticación y autorización.
+  - Control de acceso
+  - Control de features
+- **Importante**: Cierre de Grupos
 
 ### Asignación de Tareas
+- **Obligatorio**: Asignación de tareas grupales
+- **Importante**: Tareas directo en la aplicación.
+  - Formatos de cuestionarios basados en formas de HTML que permitan contestar preguntas o resolver ejercicios directamente desde la aplicación.
+- **Obligatorio**: Calificación de tareas en la aplicación.
+- **Importante**: Calificaciones automáticas
+- **Importante**: Rechazo automático de entregas fuera de forma.
+- **Obligatorio**: Entrega tardía
+- **Importante**: Regreso de tarea
+- **Deseable**: Video conferencia
+- **Obligatorio**: Aplicación de Jupyter Notebooks para la ejecución de Python
+- **Obligatorio**: Implementación de LATEX para clases de matemáticas
 
 ### Organización de Material de Clases
+- **Obligatorio**: Creación de carpetas compartidas con acceso a los miembros del grupo
+- **Obligatorio**: Trabajo compartido en las carpetas compartidas
+- **Obligatorio**: Respaldo a través de repositorios
+- **Obligatorio**: Creación de plantillas
+  - Las plantillas pueden unirse a tareas para contestarlo directo en la aplicación.
+
+### Foros
+- **Obligatorio**: Creación de foros por materia
 
 ### Pase de Lista
+- **Obligatorio**: Módulo de pase de lista en teléfono
+
+### Cloud
+- **Deseable**: Procesamiento de datos en la nube
