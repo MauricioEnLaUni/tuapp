@@ -1,0 +1,3 @@
+/**
+ * @fileoverview Project's palette
+ */
